@@ -4,6 +4,7 @@ server:
 
 # windows启动consul，以开发模式启动
 # consul agent -dev
+# 访问 http://localhost:8500/
 
 spring:
   application:
