@@ -12,6 +12,7 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
  */
 @SpringBootApplication
 @EnableEurekaClient
+//添加自定义的负债均衡的规则
 //@RibbonClient(name = "CLOUD-PAYMENT-SERVICE", configuration = MyselfRule.class)
 public class OrderMain80 {
     public static void main(String[] args) {
