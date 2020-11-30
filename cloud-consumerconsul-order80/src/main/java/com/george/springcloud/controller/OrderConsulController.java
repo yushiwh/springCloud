@@ -21,6 +21,7 @@ public class OrderConsulController {
 
     @GetMapping(value = "/consumer/payment/consul")
     public String paymentInfo() {
+        log.info("进入consul的consumer端");
         return restTemplate.getForObject(INVOKE_URL + "/payment/consul", String.class);
     }
 

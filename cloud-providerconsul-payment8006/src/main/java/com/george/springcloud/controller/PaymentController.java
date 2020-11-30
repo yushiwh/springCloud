@@ -21,6 +21,7 @@ public class PaymentController {
 
     @RequestMapping(value = "/payment/consul")
     public String paymentConsul() {
+        log.info("进入consul的Payment端");
         return "springcloud with consul: " + serverPort + "\t" + UUID.randomUUID().toString();
     }
 }
