@@ -54,6 +54,11 @@ public class OrderController {
         }
     }
 
+    /**
+     *  @author: nick
+     *  @Date: 2020/12/1 9:20
+     *  @Description: 需要去掉ApplicationContextConfig里面的@LoadBalanced
+     */
     @GetMapping(value = "/consumer/payment/lb")
     public String getPaymentLB() {
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
